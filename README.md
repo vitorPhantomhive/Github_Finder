@@ -1,30 +1,55 @@
-# React + TypeScript + Vite
+# GitHub Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Visão Geral
 
-Currently, two official plugins are available:
+O GitHub Finder é um projeto React construído usando o Vite, uma ferramenta de compilação rápida para desenvolvimento frontend. Ele permite que os usuários busquem por usuários do GitHub e vejam seus perfis.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Começando
 
-## Expanding the ESLint configuration
+Para começar com o projeto, siga as etapas abaixo:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone o repositório:
+  https://github.com/vitorPhantomhive/Github_Finder.git
 
-- Configure the top-level `parserOptions` property like this:
+2. Instale as dependências:
+  npm install
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+3. Inicie o servidor de desenvolvimento:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+  entre no diretorio do github_finder e rode npm run dev
+
+## Scripts
+
+- dev: Inicia o servidor de desenvolvimento do Vite.
+- build: Compila o projeto usando TypeScript e Vite.
+- lint: Realiza a análise estática do código usando ESLint com suporte para TypeScript.
+- preview: Inicia a visualização do Vite para a versão de produção.
+
+## Dependências
+
+- react: ^18.2.0
+- react-dom: ^18.2.0
+- react-icons: ^4.12.0
+- react-router-dom: ^6.20.1
+
+## Dependências de Desenvolvimento
+
+- @types/react: ^18.2.37
+- @types/react-dom: ^18.2.15
+- @typescript-eslint/eslint-plugin: ^6.10.0
+- @typescript-eslint/parser: ^6.10.0
+- @vitejs/plugin-react: ^4.2.0
+- eslint: ^8.53.0
+- eslint-plugin-react-hooks: ^4.6.0
+- eslint-plugin-react-refresh: ^0.4.4
+- typescript: ^5.2.2
+- vite: ^5.0.0
+
+## Notas
+
+- TypeScript: Utilizado para verificação de tipos e aprimoramento do desenvolvimento.
+- Vite: Escolhido pela rapidez e eficiência no desenvolvimento frontend.
+- ESLint: Configurado com suporte para TypeScript para garantir qualidade de código.
+- React Icons: Utilizado para incorporar ícones na aplicação.
+- React Router: Facilita a navegação e roteamento dentro da aplicação React.
+- React Refresh: Permite a atualização rápida de componentes React durante o desenvolvimento.
